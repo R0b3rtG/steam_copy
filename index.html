@@ -11,13 +11,30 @@
 <body>
   <header>
     <div class="container">
-      <div class="first-half">
+      <ul class="first-half">
         <a href="https://store.steampowered.com/"><img src="img/header_logo.png" alt=""></a>
-        <a class="option" href="https://store.steampowered.com/">STORE</a>
-        <a class="option" href="https://steamcommunity.com/">COMMUNITY</a>
-        <a class="option" href="https://store.steampowered.com/about/">ABOUT</a>
-        <a class="option" href="https://help.steampowered.com/en/">SUPPORT</a>
-      </div>
+        <li class="option store"><a class="option" href="https://store.steampowered.com/">STORE</a>
+          <ul class="dropdown-1">
+            <li><a href="">HOME</a></li>
+            <li><a href="">DISCOVERY QUEUE</a></li>
+            <li><a href="">WISHLIST</a></li>
+            <li><a href="">POINTS SHOP</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">STATS</a></li>
+          </ul>
+        </li>
+        <li class="option comm"><a class="option" href="https://steamcommunity.com/">COMMUNITY</a>
+          <ul class="dropdown-2">
+            <li><a href="">HOME</a></li>
+            <li><a href="">DISCUSSION</a></li>
+            <li><a href="">WORKSHOP</a></li>
+            <li><a href="">MARKET</a></li>
+            <li><a href="">BROADCAST</a></li>
+          </ul>
+        </li>
+        <li class="option"><a class="option" href="https://store.steampowered.com/about/">ABOUT</a></li>
+        <li class="option"><a class="option" href="https://help.steampowered.com/en/">SUPPORT</a></li>
+      </ul>
       <div class="second-half">
         <div class="content">
           <a href="https://store.steampowered.com/about/" class="btn install"><i class="fas fa-download"></i> Install Steam</a>
@@ -36,11 +53,11 @@
         <div class="label">
           <label for="name">Steam account name</label>
         </div>
-        <input type="text" id="name">
+        <input type="text">
         <div class="label">
           <label for="password">Password</label>
         </div>
-        <input type="password" id="password">
+        <input type="password">
         <div class="checkbox">
           <input type="checkbox">
           <h3>Remember me on this computer</h3>
