@@ -205,6 +205,7 @@ input[type="checkbox"]{
   outline: none;
   caret-color: #fff;
   width: 50%; 
+  color: #fff;
 }
 
 /* Second Half */
