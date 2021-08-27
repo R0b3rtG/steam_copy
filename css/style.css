@@ -10,6 +10,12 @@ body{
   background: #212429;
 }
 
+.ham-men{
+  width: 50px;
+  width: 50px;
+  display: none;
+}
+
 .container{
   width: 940px;
   display: flex;
@@ -51,6 +57,7 @@ header .first-half{
   width: 63%;
   display: flex;
   align-items: center;
+  position: relative;
   /* border: 2px solid green; */
 }
 
@@ -177,6 +184,7 @@ header .second-half .content .lang:hover span{
 }
 
 #main-section .container{
+  display: flex;
   align-items: flex-start;
 }
 
@@ -376,4 +384,63 @@ footer .second-text h4 a{
 
 footer .second-text h4 a:hover{
   color: #fff;
+}
+
+/* Media Queries */
+@media(max-width: 790px){
+  footer{
+    display: none;
+  }
+
+  #main-section .container{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header .first-half .option,
+  header .second-half{
+    display: none;
+  }
+
+  header .first-half,
+  header{
+    width: 100vw;
+    height: 70px;
+    justify-content: center;
+  }
+
+  #main-section,
+  #main-section .container,
+  #main-section .first-half,
+  #main-section .second-half{
+    width: 100vw;
+  }
+
+  #main-section .second-half img{
+    width: 50%;
+  }
+
+  header .first-half a .img{
+    width: 100px;
+  }
+
+  .ham-men{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+}
+
+@media(max-width: 500px){
+  #main-section .second-half{
+    padding-top: 0;
+  }
+
+  #main-section .first-half input[type="password"],
+  #main-section .first-half input[type="text"],
+  .label,
+  .checkbox{
+    width: 60% !important;
+  }
 }
